@@ -188,7 +188,8 @@ document.getElementById('google-signup-btn').addEventListener('click', () => {
     signInWithPopup(auth, provider)
         .then(result => {
             alert("Google Sign-Up Successful!");
-            window.location.href = "https://8daudiomusicpro.github.io/8daudiomusicpr/?";
+           window.open("https://8daudiomusicpro.github.io/8daudiomusicpr/?", "_blank");
+
         })
         .catch(error => {
             console.error(error);
